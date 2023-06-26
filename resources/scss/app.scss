@@ -5,6 +5,10 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 // HEADER
 
 header {
@@ -13,6 +17,12 @@ header {
         h1 {
             color: red;
             font-weight: 700;
+        }
+        nav {
+            flex-basis: 40%;
+            .navbar {
+                flex-basis: 100%;
+            }
         }
 }
 
