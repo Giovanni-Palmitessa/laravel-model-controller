@@ -12,8 +12,9 @@
                   <h6 class="card-subtitle mb-2 text-body-secondary">{{ $movie->original_title }}</h6>
                   <p class="card-text">Nazionalità: {{ $movie->nationality }}</p>
                   <p class="card-text">Data di Uscita: {{ $movie->date }}</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                  <p class="card-text">Voto: {{ $movie->vote }}</p>
+                  <a href="#" class="card-link">Guarda ora!</a>
+                  <a href="#" class="card-link">Aggiungi alla WatchList</a>
                 </div>
               </div>
             </div>
