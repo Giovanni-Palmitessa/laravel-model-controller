@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Guest;
 
-use App\Http\Controllers\Controller;
+use App\Models\Movie;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class PageController extends Controller
 {
@@ -17,9 +18,9 @@ class PageController extends Controller
         return view('about');
     }
 
-    // public function movies()
-    // {
-    //     $arrMovies = Movie::all();;
-    //     return view('movies', compact('arrMovies'));
-    // }
+    public function movies()
+    {
+        $arrMovies = Movie::all();
+        return view('movies', compact('arrMovies'));
+    }
 }
